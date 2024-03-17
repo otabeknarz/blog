@@ -1,0 +1,13 @@
+.post .date {
+    font-weight: 300;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.post-text {
+    line-height: 2;
+}
+
+.post-text img {
+    max-width: 100%;
+}

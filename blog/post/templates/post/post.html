@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{ post.title }}{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/post/post.css' %}">
+{% endblock %}
+{% block content %}
+<div class="post">
+    <h1 class="title">{{ post.title }}</h1>
+    <p class="username">@{{ post.user.username }}</p>
+    <p class="date">{{ post.created }}</p>
+    <p class="post-text">{{ post.text|safe }}</p>
+</div>
+<div class="card">
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias corrupti odio a dolor consequuntur nobis quod
+        eius repellendus blanditiis vitae.
+    </p>
+</div>
+{% endblock %}

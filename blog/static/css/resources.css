@@ -1,0 +1,25 @@
+.card {
+  max-width: 500px;
+  border: #8d8b8b 1px solid;
+  padding: 10px 30px;
+  margin: 10px auto;
+  box-shadow: 0 0 10px #222;
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  background-color: #007bff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}

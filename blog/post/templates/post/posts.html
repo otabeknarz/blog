@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Postlar{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/post/posts.css' %}">
+{% endblock %}
+{% block content %}
+{% if query %}
+<h2>"{{ query }}" bo'yicha topilgan postlar</h2>
+{% endif %}
+<ul class="posts">
+    {% for post in posts %}
+    <li class="post">
+        <a href="{% url 'post:post' post.slug %}">
+            <p class="date">{{ post.created|date:"M d, Y" }}</p>
+            <p class="title">{{ post.title|truncatewords:10 }}</p>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

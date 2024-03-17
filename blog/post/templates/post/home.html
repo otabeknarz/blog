@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Asosiy{% endblock %}
+{% block content %}
+<h2>Random picsum image for you</h2>
+<div class="picsum-image">
+    <img src="https://picsum.photos/1000/400" alt="Picsum image">
+</div>
+<h1>Welcome to my first blog site in django</h1>
+<p class="home-p">I write about programming languages such as python and it's frameworks called django, aiogram and
+    other built-in libraries</p>
+<a class="btn home-btn" href="{% url 'post:posts' %}">Read blogs</a>
+{% endblock %}

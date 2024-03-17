@@ -1,0 +1,28 @@
+<header class="main-header container">
+    <nav class="main-navigation">
+        <div class="main-navigation__brand">
+            <a class="main-navigation__logo" href="{% url 'post:home' %}">Otabek's Blog</a>
+        </div>
+        <button class="btn navbar-open" id="navbar-open">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="main-navigation__items">
+            <li class="main-navigation__item"><a href="{% url 'post:home' %}">Asosiy</a></li>
+            <li class="main-navigation__item"><a href="{% url 'post:posts' %}">Postlar</a></li>
+            <form class="main-navigation__item" action="{% url 'post:posts' %}" method="get">
+                <input class="search-input" type="search" name="search" placeholder="Search...">
+                <button class="btn search-btn" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </ul>
+    </nav>
+</header>
+
+<ul class="main-navigation__items responsive" id="responsive-navbar">
+    <li class="main-navigation__item"><a href="{% url 'post:home' %}">Asosiy</a></li>
+    <li class="main-navigation__item"><a href="{% url 'post:posts' %}">Postlar</a></li>
+    <form id="search-form" class="main-navigation__item" action="{% url 'post:posts' %}" method="get">
+        <input id="search-input" class="search-input" type="search" name="search" placeholder="Search...">
+    </form>
+</ul>

@@ -1,0 +1,13 @@
+ul li.post {
+    list-style: none;
+    padding: 10px 20px;
+    border-bottom: rgba(0, 0, 0, 0.075) 2px solid;
+}
+
+
+.post:hover {
+    box-shadow: 0 0 5px #222;
+    border-radius: 5px;
+    border-bottom: transparent 2px solid;
+    background-color: rgba(0, 0, 0, 0.025);
+}
